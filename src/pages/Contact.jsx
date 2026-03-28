@@ -72,7 +72,7 @@ export default function Contact() {
             {/* Google Maps Embed */}
             <div className="h-full min-h-[500px] rounded-3xl overflow-hidden shadow-lg border border-slate-100">
                <iframe 
-                 src="https://maps.google.com/maps?q=17.500833,78.420111&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                 src="https://www.google.com/maps?q=17.5008254,78.4201159&z=17&hl=en&output=embed" 
                  width="100%" 
                  height="100%" 
                  style={{ border: 0 }} 
