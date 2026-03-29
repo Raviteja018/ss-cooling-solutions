@@ -70,18 +70,31 @@ export default function Contact() {
             </div>
 
             {/* Google Maps Embed */}
-            <div className="h-full min-h-[500px] rounded-3xl overflow-hidden shadow-lg border border-slate-100">
-               <iframe 
-                 src="https://www.google.com/maps?q=17.5008254,78.4201159&z=17&hl=en&output=embed" 
-                 width="100%" 
-                 height="100%" 
-                 style={{ border: 0 }} 
-                 allowFullScreen="" 
-                 loading="lazy" 
-                 referrerPolicy="no-referrer-when-downgrade"
-                 title="Google Maps Location Kukatpally"
-                 className="w-full h-full object-cover"
-               ></iframe>
+            <div className="h-full min-h-[500px] flex flex-col rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-white">
+               <div className="flex-grow relative">
+                 <iframe 
+                   src="https://www.google.com/maps?q=17.5008254,78.4201159&z=17&hl=en&output=embed" 
+                   width="100%" 
+                   height="100%" 
+                   style={{ border: 0 }} 
+                   allowFullScreen="" 
+                   loading="lazy" 
+                   referrerPolicy="no-referrer-when-downgrade"
+                   title="Google Maps Location Kukatpally"
+                   className="absolute inset-0 w-full h-full object-cover"
+                 ></iframe>
+               </div>
+               <div className="p-6 bg-slate-50 border-t border-slate-200">
+                 <a 
+                   href="https://www.google.com/maps/dir/?api=1&destination=17.5008254,78.4201159" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="flex items-center justify-center gap-2 w-full py-4 bg-primary-600 text-white rounded-xl font-bold text-lg hover:bg-primary-700 transition shadow-md"
+                 >
+                   <MapPin className="w-5 h-5" />
+                   Get Directions on Google Maps
+                 </a>
+               </div>
             </div>
 
           </div>
